@@ -1,8 +1,9 @@
-import './App.css'
+import {ShopCard} from "./components/shopCard/ShopCard.tsx";
 
-function App() {
-  return <>
-  </>
+export function App() {
+  return(
+      <>
+        <ShopCard/>
+      </>
+  )
 }
-
-export default App
