@@ -1,5 +1,14 @@
-import {ButtonStyled, ItemNameStyled, MainCardStyled, MainPictureStyled, DetailsStyled} from "./ShopCardStyled.ts";
+import {
+    ButtonContainer,
+    ButtonStyled,
+    DetailsStyled,
+    ItemNameStyled,
+    MainCardStyled,
+    MainPictureStyled
+} from "./ShopCardStyled.ts";
 import mainImg from "./../../assets/images/macBookM4Pro.jpg"
+import {LikeButton} from "./LikeButton.tsx";
+
 
 export const ShopCard = () => {
     return (
@@ -13,8 +22,11 @@ export const ShopCard = () => {
                 Force Touch trackpad
                 Bla bla lbledf
             </DetailsStyled>
-            <ButtonStyled buttonType={"primary"}>Add to Cart</ButtonStyled>
-            <ButtonStyled buttonType={"secondary"}>Details</ButtonStyled>
+            <ButtonContainer>
+                <ButtonStyled buttonType={"primary"}>Add to Cart</ButtonStyled>
+                <ButtonStyled buttonType={"secondary"}>Details</ButtonStyled>
+                <LikeButton/>
+            </ButtonContainer>
         </MainCardStyled>
 
     );

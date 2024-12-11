@@ -1,16 +1,23 @@
 import styled, {css} from "styled-components";
 
+export const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 type ButtonStyledPropsType = {
     buttonType: "primary" | "secondary"
 }
 
 export const ButtonStyled = styled.button<ButtonStyledPropsType>`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     width: 86px;
     height: 30px;
-    border: none;
-    margin-left: 20px;
-    margin-bottom: 22px;
+    padding: 0;
     font-family: Inter, sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -27,10 +34,8 @@ export const ButtonStyled = styled.button<ButtonStyledPropsType>`
         color: rgba(5, 104, 221, 0.91);
 
     `}
-
     &:hover {
         opacity: 0.9;
-        cursor: pointer;
     }
 
     &:focus {
@@ -42,6 +47,30 @@ export const ButtonStyled = styled.button<ButtonStyledPropsType>`
     }
 `
 
+type LikeButtonProps = {
+    liked: boolean
+}
+export const LikeButtonStyled = styled.button<LikeButtonProps>`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 86px;
+    height: 30px;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    float: left;
+
+    svg {
+        transition: fill 0.3s ease;
+        fill: ${(props) => (props.liked ? "red" : "pink")};
+    }
+`;
+
+
 export const MainCardStyled = styled.div`
     height: 400px;
     max-width: 300px;
@@ -51,33 +80,33 @@ export const MainCardStyled = styled.div`
 `
 
 export const MainPictureStyled = styled.img`
-  border-radius: 10px;
-  margin: 10px;
-  width: 280px;
-  height: 170px;
-  flex-shrink: 0;
+    border-radius: 10px;
+    margin: 10px;
+    width: 280px;
+    height: 170px;
+    flex-shrink: 0;
 `
 
 export const ItemNameStyled = styled.h1`
-  color: #000;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-left: 20px;
-  text-align: left;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 20px;
+    text-align: left;
 `
 
 export const DetailsStyled = styled.p`
-  display: block;
-  width: 260px;
-  color: #ABB3BA;
-  font-family: Inter,serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: left;
-  margin: 20px;
+    display: block;
+    width: 260px;
+    color: #ABB3BA;
+    font-family: Inter, serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin: 20px;
 `
