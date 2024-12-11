@@ -11,6 +11,7 @@ export const ShopCard = () => {
                 Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port
                 Magic Keyboard with Touch ID
                 Force Touch trackpad
+                Bla bla lbledf
             </DetailsStyled>
             <ButtonStyled buttonType={"primary"}>Add to Cart</ButtonStyled>
             <ButtonStyled buttonType={"secondary"}>Details</ButtonStyled>
