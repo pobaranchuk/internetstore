@@ -1,16 +1,16 @@
 import styled, {css} from "styled-components";
 
-export const ButtonContainer = styled.div`
+export const ButtonContainerStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
 `
 
-type ButtonStyledPropsType = {
+type ButtonStyledProps = {
     buttonType: "primary" | "secondary"
 }
 
-export const ButtonStyled = styled.button<ButtonStyledPropsType>`
+export const ButtonStyled = styled.button<ButtonStyledProps>`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,12 +24,12 @@ export const ButtonStyled = styled.button<ButtonStyledPropsType>`
     font-weight: 700;
     float: left;
 
-    ${props => props.buttonType === "primary" && css<ButtonStyledPropsType>`
+    ${props => props.buttonType === "primary" && css<ButtonStyledProps>`
         background-color: rgba(5, 104, 221, 0.91);
         color: #ffffff;
 
     `}
-    ${props => props.buttonType === "secondary" && css<ButtonStyledPropsType>`
+    ${props => props.buttonType === "secondary" && css<ButtonStyledProps>`
         background-color: rgba(255, 255, 255, 0.79);
         color: rgba(5, 104, 221, 0.91);
 
@@ -77,6 +77,8 @@ export const MainCardStyled = styled.div`
     border-radius: 15px;
     background: #fff;
     box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    
 `
 
 export const MainPictureStyled = styled.img`
