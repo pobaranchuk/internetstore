@@ -3,7 +3,7 @@ import styled, {css} from "styled-components";
 export const ButtonContainerStyled = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 `
 
 type ButtonStyledProps = {
@@ -48,9 +48,10 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
 `
 
 
-export const MainCardStyled = styled.div`
+export const MainCardStyled = styled.button`
+    display: flex;
     height: 400px;
-    max-width: 300px;
+    width: 300px;
     border-radius: 15px;
     background: #fff;
     box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);

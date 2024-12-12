@@ -33,7 +33,6 @@ export const ShopCard = () => {
                     </DetailsStyled>
                     <ButtonContainerStyled>
                         <ButtonStyled buttonType={"primary"}>Add to Cart</ButtonStyled>
-                        <ButtonStyled buttonType={"secondary"}>Details</ButtonStyled>
                         <LikeButton/>
                     </ButtonContainerStyled>
                 </>
