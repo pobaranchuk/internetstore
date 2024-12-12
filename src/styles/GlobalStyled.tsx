@@ -41,14 +41,6 @@ export const GlobalStyled = createGlobalStyle`
     color: ${Theme.colors.font};
   }
 
-  section:nth-of-type(odd) {
-    background-color: ${Theme.colors.primaryBg};
-  }
-
-  section:nth-of-type(even) {
-    background-color: ${Theme.colors.secondaryBg};
-  }
-
   section {
     padding: 100px 0;
     

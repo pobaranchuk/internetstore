@@ -47,29 +47,6 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
     }
 `
 
-type LikeButtonProps = {
-    liked: boolean
-}
-export const LikeButtonStyled = styled.button<LikeButtonProps>`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    width: 86px;
-    height: 30px;
-    padding: 0;
-    font-family: Inter, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    float: left;
-
-    svg {
-        transition: fill 0.3s ease;
-        fill: ${(props) => (props.liked ? "red" : "pink")};
-    }
-`;
-
 
 export const MainCardStyled = styled.div`
     height: 400px;

@@ -1,14 +1,37 @@
-import {ShopCard} from "./components/shopCard/ShopCard.tsx";
-import {ProductAssortmentStyled} from "./components/productAssortment/ProductAssortmentStyled.tsx";
+import {ShopCard} from "./layout/sections/shopCards/shopCard/ShopCard.tsx";
+import {ShopCardsStyled} from "./layout/sections/shopCards/ShopCardsStyled.tsx";
+import {Header} from "./layout/header/Header.tsx";
+import {BodyStyled} from "./layout/sections/BodyStyled.tsx";
+import {Navigation} from "./layout/sections/navigation/Navigation.tsx";
 
 export function App() {
   return(
       <>
-          <ProductAssortmentStyled>
-              <ShopCard/>
-              <ShopCard/>
-              <ShopCard/>
-          </ProductAssortmentStyled>
+          <Header/>
+          <BodyStyled>
+              <Navigation/>
+              <ShopCardsStyled>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+                  <ShopCard/>
+              </ShopCardsStyled>
+          </BodyStyled>
       </>
   )
 }

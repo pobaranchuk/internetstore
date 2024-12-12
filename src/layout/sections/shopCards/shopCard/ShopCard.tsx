@@ -7,8 +7,8 @@ import {
     MainPictureStyled
 } from "./ShopCardStyled.ts";
 import Tilt from 'react-parallax-tilt';
-import mainImg from "./../../assets/images/macBookM4Pro.jpg"
-import {LikeButton} from "./LikeButton.tsx";
+import mainImg from "../../../../assets/images/macBookM4Pro.jpg"
+import {LikeButton} from "../../../../components/icons/LikeButton.tsx";
 
 
 export const ShopCard = () => {
