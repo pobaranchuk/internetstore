@@ -5,7 +5,7 @@ export const NavigationStyled = styled.nav`
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 100vh;
+    height: 85vh;
     background-color: rgba(92, 92, 221, 0.72);
     color: #fff;
     padding: 15px;

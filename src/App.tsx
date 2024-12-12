@@ -19,14 +19,9 @@ export function App() {
                   <ShopCard/>
                   <ShopCard/>
                   <ShopCard/>
-                  <ShopCard/>
-                  <ShopCard/>
-                  <ShopCard/>
-                  <ShopCard/>
-                  <ShopCard/>
-                  <ShopCard/>
               </ShopCardsStyled>
           </BodyStyled>
+          {/*<FooterStyled/>*/}
       </>
   )
 }

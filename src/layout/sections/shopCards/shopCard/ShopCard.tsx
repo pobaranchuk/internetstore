@@ -27,9 +27,7 @@ export const ShopCard = () => {
                     <DetailsStyled>6-core Neural Engine
                         14-inch Liquid Retina XDR display²
                         Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port
-                        Magic Keyboard with Touch ID
-                        Force Touch trackpad
-                        Bla bla lbledf
+                        Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port
                     </DetailsStyled>
                     <ButtonContainerStyled>
                         <ButtonStyled buttonType={"primary"}>Add to Cart</ButtonStyled>

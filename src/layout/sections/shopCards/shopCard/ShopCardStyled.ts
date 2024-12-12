@@ -50,21 +50,22 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
 
 export const MainCardStyled = styled.button`
     display: flex;
-    height: 400px;
-    width: 300px;
+    height: 370px;
+    width: 270px;
     border-radius: 15px;
     background: #fff;
     box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 19px;
     
 `
 
 export const MainPictureStyled = styled.img`
+    display: flex;
     border-radius: 10px;
     margin: 10px;
-    width: 280px;
-    height: 170px;
-    flex-shrink: 0;
+    height: 150px;
+    width: 250px;
+    
 `
 
 export const ItemNameStyled = styled.h1`
@@ -74,13 +75,14 @@ export const ItemNameStyled = styled.h1`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 20px;
+    margin-left: 15px;
     text-align: left;
 `
 
 export const DetailsStyled = styled.p`
     display: block;
-    width: 260px;
+    height: 100px;
+    width: 250px;
     color: #ABB3BA;
     font-family: Inter, serif;
     font-size: 12px;
@@ -88,5 +90,8 @@ export const DetailsStyled = styled.p`
     font-weight: 500;
     line-height: 20px;
     text-align: left;
-    margin: 20px;
+    margin: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    padding-right: 3px;
 `
