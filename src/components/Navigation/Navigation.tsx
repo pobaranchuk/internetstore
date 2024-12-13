@@ -1,4 +1,4 @@
-import { NavigationStyled } from './NavigationStyled.tsx'
+import { NavigationStyled } from './NavigationStyled.ts'
 
 export const Navigation = () => {
   return (
