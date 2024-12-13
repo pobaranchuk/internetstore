@@ -1,6 +1,5 @@
-import {createGlobalStyle} from "styled-components";
-import {Theme} from "./Theme.ts";
-
+import { createGlobalStyle } from 'styled-components'
+import { Theme } from './Theme.ts'
 
 export const GlobalStyled = createGlobalStyle`
   *,
