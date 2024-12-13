@@ -1,15 +1,14 @@
 import { FaShop } from 'react-icons/fa6'
 import { IconWrapper } from '../IconWrapper.tsx'
 import { animateScroll as scroll } from 'react-scroll'
+import { ICON_CONFIG } from './IconConfig.ts'
 
 export const HomeButton = () => {
   return (
     <IconWrapper
-      onClick={() => {
-        scroll.scrollToTop()
-      }}
+      onClick={scroll.scrollToTop}
     >
-      <FaShop size={'24px'} color={'Magenta'} />
+      <FaShop {...ICON_CONFIG} />
     </IconWrapper>
   )
 }

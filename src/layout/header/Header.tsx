@@ -9,7 +9,7 @@ import { SearchBar } from '../../components/searchBar/SearchBar.tsx'
 export const Header = () => {
   return (
     <HeaderStyled>
-      <FlexWrapper justify={'space-between'} align={'center'}>
+      <FlexWrapper >
         <HomeButton />
         <SearchBar />
         <LikeButton />

@@ -1,10 +1,11 @@
 import { IconWrapper } from '../IconWrapper.tsx'
 import { FaCartShopping } from 'react-icons/fa6'
+import { ICON_CONFIG } from './IconConfig.ts'
 
 export const BaskedButton = () => {
   return (
     <IconWrapper>
-      <FaCartShopping size={'24px'} color={'yellow'} />
+      <FaCartShopping {...ICON_CONFIG} />
     </IconWrapper>
   )
 }

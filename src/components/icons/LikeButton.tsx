@@ -1,10 +1,11 @@
 import { IconWrapper } from '../IconWrapper.tsx'
 import { MdFavorite } from 'react-icons/md'
+import { ICON_CONFIG } from './IconConfig.ts'
 
 export const LikeButton = () => {
   return (
     <IconWrapper>
-      <MdFavorite size={'24px'} color={'red'} />
+      <MdFavorite {...ICON_CONFIG} />
     </IconWrapper>
   )
 }
