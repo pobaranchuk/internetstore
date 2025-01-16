@@ -6,14 +6,13 @@ import { RoutePath } from '@common/router/Routing.tsx'
 
 export const AccountButton = () => {
 
-  let navigate = useNavigate();
+  const navigate = useNavigate()
 
-  const LoginHandler = () => {
-    return navigate(RoutePath.Login)
-  }
+  const LoginHandler = () => navigate(RoutePath.Login)
+
   return (
     <IconWrapper>
-      <RiAccountBoxLine {...ICON_CONFIG} onClick={LoginHandler}/>
+      <RiAccountBoxLine {...ICON_CONFIG} onClick={LoginHandler} />
     </IconWrapper>
   )
 }
