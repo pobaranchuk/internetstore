@@ -1,6 +1,5 @@
-import {createGlobalStyle} from "styled-components";
-import {Theme} from "./Theme.ts";
-
+import { createGlobalStyle } from 'styled-components'
+import { Theme } from './Theme.ts'
 
 export const GlobalStyled = createGlobalStyle`
   *,
@@ -39,14 +38,6 @@ export const GlobalStyled = createGlobalStyle`
     border: none;
     cursor: pointer;
     color: ${Theme.colors.font};
-  }
-
-  section:nth-of-type(odd) {
-    background-color: ${Theme.colors.primaryBg};
-  }
-
-  section:nth-of-type(even) {
-    background-color: ${Theme.colors.secondaryBg};
   }
 
   section {
