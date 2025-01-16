@@ -16,17 +16,17 @@ export const SearchInput = styled.input`
   outline: none;
   background: transparent;
   font-size: 16px;
-  color: #333;
+  color: ${props => props.theme.colors.primaryBg};
   margin-left: 10px;
 
   &::placeholder {
-    color: #aaa;
+    color: ${props => props.theme.colors.placeHolderColor};;
   }
 `
 
 export const SearchButton = styled.button`
-  background-color: #28a745;
-  color: white;
+  background-color: ${props => props.theme.colors.headerPrimary};
+  color: ${props => props.theme.colors.white};;
   border: none;
   border-radius: 20px;
   padding: 5px 15px;
@@ -35,6 +35,6 @@ export const SearchButton = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #218838;
+    background-color: ${props => props.theme.colors.headerSecondary};
   }
 `

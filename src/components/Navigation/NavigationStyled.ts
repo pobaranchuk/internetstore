@@ -12,7 +12,7 @@ export const NavigationStyled = styled.nav`
   margin: 10px;
 
   ul {
-    width: 90%;
+    padding: 5px;
   }
 
   li {

@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router'
 import { Login } from '@components/Login/Login.tsx'
 import { HomePage } from '@components/HomePage/HomePage.tsx'
-import { CardPage } from '@components/CardPage/CardPage.tsx'
+import { CardPage } from '@components/CardPage'
 
 export const RoutePath = {
   HomePage: '/',

@@ -4,6 +4,8 @@ export const ButtonContainerStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    max-width: 250px;
+    margin: 15px;
 `
 
 export const ButtonStyled = styled.button`
@@ -11,15 +13,15 @@ export const ButtonStyled = styled.button`
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    width: 86px;
-    height: 30px;
-    padding: 0;
+    width: auto;
+    max-width: 100px;
+    padding: 10px;
     font-family: Inter, sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    background-color: rgba(5, 104, 221, 0.91);
-    color: #ffffff;
+    background-color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.secondary};
 
     &:hover {
         opacity: 0.9;
@@ -39,7 +41,7 @@ export const MainCardStyled = styled.button`
     height: 370px;
     width: 270px;
     border-radius: 15px;
-    background: #fff;
+    background: ${props => props.theme.colors.secondary};
     box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
     margin: 19px;
 `
@@ -53,21 +55,22 @@ export const MainPictureStyled = styled.img`
 `
 
 export const ItemNameStyled = styled.h1`
-    color: #000;
+    color: ${props => props.theme.colors.textPrimary};
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 15px;
     text-align: left;
+    margin: 15px;
 `
 
 export const DetailsStyled = styled.p`
     display: block;
     height: 100px;
-    width: 250px;
-    color: #abb3ba;
+    max-width: 100%;
+    overflow: hidden;
+    color: ${props => props.theme.colors.textSecondary};
     font-family: Inter, serif;
     font-size: 12px;
     font-style: normal;
@@ -75,7 +78,4 @@ export const DetailsStyled = styled.p`
     line-height: 20px;
     text-align: left;
     margin: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 3px;
 `

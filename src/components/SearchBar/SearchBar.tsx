@@ -2,7 +2,7 @@ import { SearchButton, SearchInput, SearchWrapper } from './SearchBarStyled.ts'
 import { FiSearch } from 'react-icons/fi'
 import { ChangeEvent, useState } from 'react'
 import { IconWrapper } from '../Icons/IconWrapperStyled.ts'
-import { ICON_CONFIG } from '@components/Icons/IconConfig.ts'
+import { ICON_CONFIG } from '@components/Icons/constants.ts'
 
 export const SearchBar = () => {
   const [searchText, setSearchText] = useState('')

@@ -37,6 +37,8 @@ export const ShopCard = () => {
             6-core Neural Engine 14-inch Liquid Retina XDR display² Three
             Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack,
             MagSafe 3 port Three Thunderbolt 4 ports, HDMI port, SDXC card slot,
+            headphone jack, MagSafe 3 port SDXC card slot, headphone jack,
+            MagSafe 3 port Three Thunderbolt 4 ports, HDMI port, SDXC card slot,
             headphone jack, MagSafe 3 port
           </DetailsStyled>
           <ButtonContainerStyled>

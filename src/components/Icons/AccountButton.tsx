@@ -1,6 +1,6 @@
 import { RiAccountBoxLine } from 'react-icons/ri'
 import { IconWrapper } from './IconWrapperStyled.ts'
-import { ICON_CONFIG } from './IconConfig.ts'
+import { ICON_CONFIG } from './constants.ts'
 import { useNavigate } from 'react-router'
 import { RoutePath } from '@common/router/Routing.tsx'
 
