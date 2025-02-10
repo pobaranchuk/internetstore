@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const BodyStyled = styled.section`
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
-  //overflow: auto;
+  overflow: auto;
+  padding: 50px 0;  
 `

@@ -43,7 +43,7 @@ export const MainCardStyled = styled.button`
     border-radius: 15px;
     background: ${props => props.theme.colors.secondary};
     box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
-    margin: 19px;
+    margin: 20px;
 `
 
 export const MainPictureStyled = styled.img`

@@ -19,6 +19,8 @@ export function HomePage() {
           <ShopCard />
           <ShopCard />
           <ShopCard />
+          <ShopCard />
+          <ShopCard />
         </ShopCardsStyled>
       </BodyStyled>
     </>
