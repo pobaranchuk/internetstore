@@ -6,7 +6,7 @@ export const SearchWrapper = styled.div`
   background-color: #f5f5f5;
   border-radius: 25px;
   padding: 5px 15px;
-  width: 800px;
+  width: 40%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `
 
