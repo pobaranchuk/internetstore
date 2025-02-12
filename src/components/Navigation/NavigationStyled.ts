@@ -1,28 +1,23 @@
 import styled from 'styled-components'
 
 export const NavigationStyled = styled.nav`
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 85vh;
-  background-color: rgba(92, 92, 221, 0.72);
-  color: #fff;
-  padding: 15px;
-  margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 10px;
 
-  ul {
-    padding: 5px;
-  }
+    ul {
+        margin: 20px;
+    }
 
-  li {
-    margin-bottom: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+    li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 5px;
+    }
 
-  a {
-    color: #ffffff;
-  }
+    a {
+        color: #000000;
+    }
 `

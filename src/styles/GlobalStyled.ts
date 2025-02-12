@@ -40,14 +40,6 @@ export const GlobalStyled = createGlobalStyle`
     color: ${Theme.colors.font};
   }
 
-  section {
-    padding: 100px 0;
-    
-    @media ${Theme.media.mobile} {
-      padding: 80px 0;
-    }
-  }
-
   h3 {
     font-family: Josefin Sans, sans-serif;
     font-size: 16px;
