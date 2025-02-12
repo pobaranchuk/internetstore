@@ -36,14 +36,16 @@ export const ButtonStyled = styled.button`
     }
 `
 
-export const MainCardStyled = styled.button`
+export const MainCardStyled = styled.div`
+    cursor: pointer;
     display: flex;
-    height: 370px;
     width: 270px;
+    height: 370px;    
     border-radius: 15px;
     background: ${props => props.theme.colors.secondary};
     box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
     margin: 20px;
+
 `
 
 export const MainPictureStyled = styled.img`

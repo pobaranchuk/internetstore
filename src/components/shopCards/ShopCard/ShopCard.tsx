@@ -11,8 +11,15 @@ import mainImg from '@assets/images/macBookM4Pro.jpg'
 import { LikeButton } from '@components/Icons/LikeButton.tsx'
 import { useNavigate } from 'react-router'
 import { RoutePath } from '@common/router/Routing.tsx'
+import { ShopCardData } from '@components/shopCards/ShopCardsMenu.tsx'
 
-export const ShopCard = () => {
+type Props = {
+  shopCard: ShopCardData
+}
+
+export const ShopCard = ({shopCard}: Props) => {
+
+
   let navigate = useNavigate();
 
   const onClickHandler = () => {
@@ -20,7 +27,7 @@ export const ShopCard = () => {
   }
 
   return (
-    <MainCardStyled>
+    <MainCardStyled >
       <Tilt
         className='parallax-effect-img'
         tiltMaxAngleX={5}
@@ -31,15 +38,10 @@ export const ShopCard = () => {
         gyroscope={true}
       >
         <>
-          <MainPictureStyled src={mainImg} />
-          <ItemNameStyled>MacBook M4 Pro</ItemNameStyled>
-          <DetailsStyled onClick={onClickHandler}>
-            6-core Neural Engine 14-inch Liquid Retina XDR display² Three
-            Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack,
-            MagSafe 3 port Three Thunderbolt 4 ports, HDMI port, SDXC card slot,
-            headphone jack, MagSafe 3 port SDXC card slot, headphone jack,
-            MagSafe 3 port Three Thunderbolt 4 ports, HDMI port, SDXC card slot,
-            headphone jack, MagSafe 3 port
+          <MainPictureStyled src={mainImg} onClick={onClickHandler}/>
+          <ItemNameStyled onClick={onClickHandler}>{shopCard.name}</ItemNameStyled>
+          <DetailsStyled >
+            {shopCard.description}
           </DetailsStyled>
           <ButtonContainerStyled>
             <ButtonStyled >Add to Cart</ButtonStyled>

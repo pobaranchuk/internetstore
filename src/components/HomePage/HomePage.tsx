@@ -1,8 +1,11 @@
-import { ShopCard } from '@components/shopCards/ShopCard/ShopCard.tsx'
 import { ShopCardsStyled } from '@components/shopCards/ShopCardsStyled.ts'
 import { Header } from '@components/Header/Header.tsx'
 import { BodyStyled } from '@styles/BodyStyled.tsx'
 import { Navigation } from '@components/Navigation/Navigation.tsx'
+import { ShopCardsMenu } from '@components/shopCards/ShopCardsMenu.tsx'
+
+
+
 
 export function HomePage() {
   return (
@@ -11,16 +14,7 @@ export function HomePage() {
       <BodyStyled>
         <Navigation />
         <ShopCardsStyled>
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
-          <ShopCard />
+          <ShopCardsMenu/>
         </ShopCardsStyled>
       </BodyStyled>
     </>
